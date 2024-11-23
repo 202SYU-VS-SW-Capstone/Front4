@@ -13,7 +13,9 @@ import Ingredient from './pages/Ingredient';
 import ImageAnalysis from './pages/ImageAnalysis';
 import RecipeResults from './pages/RecipeResults';
 import FridgeInventory from './pages/FridgeInventory';
-
+import Manager  from './pages/Manager';
+import MemberList from './pages/MemberList';
+import Notice from './pages/Notice';
 
 
 
@@ -31,6 +33,9 @@ function App() {
         <Route path="/imageAnalysis" element={<MainLayout><ImageAnalysis /></MainLayout>} />
         <Route path="/recipeResults" element={<MainLayout><RecipeResults /></MainLayout>} />
         <Route path="/fridgeInventory" element={<MainLayout><FridgeInventory /></MainLayout>} />
+        <Route path="/manager" element={<MainLayout><Manager/></MainLayout>} />
+        <Route path="/memberList" element={<MainLayout><MemberList/></MainLayout>} />
+        <Route path="/Notice" element={<MainLayout><Notice/></MainLayout>} />
 
       </Routes>
     </Router>
