@@ -16,6 +16,7 @@ import FridgeInventory from './pages/FridgeInventory';
 import Manager  from './pages/Manager';
 import MemberList from './pages/MemberList';
 import Notice from './pages/Notice';
+import NonMember from './pages/NonMember.js';
 
 
 
@@ -36,6 +37,7 @@ function App() {
         <Route path="/manager" element={<MainLayout><Manager/></MainLayout>} />
         <Route path="/memberList" element={<MainLayout><MemberList/></MainLayout>} />
         <Route path="/Notice" element={<MainLayout><Notice/></MainLayout>} />
+        <Route path="/NonMember" element={<MainLayout><NonMember/></MainLayout>} />
 
       </Routes>
     </Router>
