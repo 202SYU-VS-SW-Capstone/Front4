@@ -16,7 +16,7 @@ const Manager = () => {
         <button onClick={() => handleNavigation('/memberlist')} className="manager-button">회원 관리</button>
         <button onClick={() => handleNavigation('/recipe')} className="manager-button">레시피 관리</button>
         <button onClick={() => handleNavigation('/notice')} className="manager-button">컨텐츠 관리</button>
-        <button onClick={() => handleNavigation('/data')} className="manager-button">데이터 관리</button>
+        <button onClick={() => handleNavigation('/dataManagement')} className="manager-button">데이터 관리</button>
       </div>
     </div>
   );

@@ -17,7 +17,8 @@ import Manager  from './pages/Manager';
 import MemberList from './pages/MemberList';
 import Notice from './pages/Notice';
 import NonMember from './pages/NonMember.js';
-
+import DataManagement from './pages/DataManagement.js';
+import Inquiry from './pages/Inquiry.js';
 
 
 
@@ -38,6 +39,9 @@ function App() {
         <Route path="/memberList" element={<MainLayout><MemberList/></MainLayout>} />
         <Route path="/Notice" element={<MainLayout><Notice/></MainLayout>} />
         <Route path="/NonMember" element={<MainLayout><NonMember/></MainLayout>} />
+        <Route path="/DataManagement" element={<MainLayout><DataManagement/></MainLayout>} />
+        <Route path="Inquiry" element={<MainLayout><Inquiry/></MainLayout>} />
+
 
       </Routes>
     </Router>
