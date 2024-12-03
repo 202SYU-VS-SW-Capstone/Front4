@@ -1,7 +1,7 @@
 /* 회원가입 컨테이너 설정 */
 .signup-container {
-    width: 100%;
-    max-width: 380px;
+    width: 150%;
+    max-width: 500px;
     padding: 2rem;
     margin: 5% auto;
     border-radius: 8px;
@@ -11,26 +11,23 @@
 }
 
 /* 이용약관 체크박스 스타일 */
-.terms-container {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-top: 1rem;
-    text-align: left;
-    font-size: 0.9rem;
-    color: #666;
-}
-
 .terms-container label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    gap: 0.5rem; 
+    margin-bottom: 1rem; 
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .terms-container input[type="checkbox"] {
-    margin-right: 0.5rem;
+    width: 1rem; 
+    height: 1rem;
+    margin: 0; 
+    cursor: pointer; 
 }
+
 
 /* 회원가입 버튼 */
 .submit-button {
@@ -55,8 +52,7 @@
     text-align: center;
     font-size: 0.8rem;
     margin-top: 2rem;
-    position: relative; /* 고정되지 않게 상대 위치로 설정 */
-    width: 100%;
+    position: relative; 
 }
 
 .footer a {
@@ -68,3 +64,9 @@
 .footer a:hover {
     text-decoration: underline;
 }
+
+
+.login-link{
+margin-top: 30px;
+}
+

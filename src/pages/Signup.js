@@ -135,41 +135,42 @@ const Signup = () => {
           />
         </div>
 
-        <fieldset className="terms">
-          <legend>이용약관</legend>
-          <label>
-            <input
-              type="checkbox"
-              name="privacyPolicy"
-              checked={termsAccepted.privacyPolicy}
-              onChange={handleCheckboxChange}
-              required
-            />
-            개인정보 수집에 동의합니다.(필수)<br/>
-          </label>
-          <label>
-            <input
-              type="checkbox"
-              name="dataSharing"
-              checked={termsAccepted.dataSharing}
-              onChange={handleCheckboxChange}
-              required
-            />
-            개인정보 제공에 동의합니다. (필수)<br/>
-          </label>
-          <label>
-            <input
-              type="checkbox"
-              name="marketing"
-              checked={termsAccepted.marketing}
-              onChange={handleCheckboxChange}
-            />
-            마케팅 정보 수신에 동의합니다. (선택)<br/>
-          </label>
-        </fieldset>
+        <fieldset className="terms-container">
+        <legend>이용약관</legend>
+        <label>
+          개인정보 수집에 동의합니다. (필수)
+          <input
+            type="checkbox"
+            name="privacyPolicy"
+            checked={termsAccepted.privacyPolicy}
+            onChange={handleCheckboxChange}
+            required
+          />
+        </label>
+        <label>
+          개인정보 제공에 동의합니다. (필수)
+          <input
+            type="checkbox"
+            name="dataSharing"
+            checked={termsAccepted.dataSharing}
+            onChange={handleCheckboxChange}
+            required
+          />
+        </label>
+        <label>
+          마케팅 정보 수신에 동의합니다. (선택)
+          <input
+            type="checkbox"
+            name="marketing"
+            checked={termsAccepted.marketing}
+            onChange={handleCheckboxChange}
+          />
+        </label>
+      </fieldset>
+
+
 
         <button type="submit" className="submit-button">회원가입 하기</button>
-
         <p className="login-link">이미 계정이 있으신가요? <a href="./Login">로그인 하러 가기</a></p>
       </form>
     </div>

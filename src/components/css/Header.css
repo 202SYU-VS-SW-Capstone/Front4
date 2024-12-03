@@ -1,31 +1,127 @@
-/* 헤더 스타일 */
+/* 기본 헤더 스타일 */
 header {
-  background-color: #81C975;  /* 헤더 색상 */
-  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+header.scrolled {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 네비게이션 바 */
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
 }
 
-header .title {
-  font-size: 1.5rem;
+/* 로고 */
+.nav-logo {
+  font-size: 24px;
   font-weight: bold;
-  text-align: center;
-  flex-grow: 1;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-header .login-button {
-  background-color: #fff;
+.nav-logo:hover {
   color: #81C975;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
 }
 
-header .login-button:hover {
-  background-color: #e0f3e3;
+/* 메뉴 스타일 */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #81C975;
+  transform: scale(1.1);
+}
+
+/* 모바일 메뉴 */
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.submenu {
+  display: none;
+  flex-direction: column;
+  background-color: #ffffff;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.submenu.active {
+  display: flex;
+}
+
+.submenu li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.submenu li a:hover {
+  color: #81C975;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
 }

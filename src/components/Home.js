@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './css/Home.css';
 
 const Home = () => {
@@ -7,7 +8,9 @@ const Home = () => {
       <div className="main-section">
         <h2>“식재료 사진을 업로드 해주세요! 관리를 도와 드릴게요!”</h2>
         <img src={`${process.env.PUBLIC_URL}/img/1.jpg`} alt="메인" className="main-image" />
-        <button className="upload-button">재료 분석하기</button>
+        <button className="upload-button">
+          <Link to="/imageAnalysis">재료 분석하기</Link>
+        </button>
       </div>
 
       <section className="recipe-section">
